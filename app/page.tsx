@@ -45,7 +45,7 @@ export default function Home() {
             <Button variant="ghost" size="sm">Features</Button>
             <Button variant="ghost" size="sm">About</Button>
             <Button size="sm" className="gradient-primary text-white border-0">
-              Get Started
+              Try Miru
             </Button>
           </div>
         </div>
@@ -61,8 +61,8 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <Badge variant="secondary" className="mb-6 text-sm">
-              <Sparkles className="w-3 h-3 mr-1" />
-              AI-Powered Recommendations
+              <Heart className="w-3 h-3 mr-1" />
+              Free & Open Source
             </Badge>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -77,17 +77,17 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Let AI understand your taste and recommend anime that perfectly matches your preferences. 
-              Track, discover, and fall in love with new stories.
+              A free, community-driven platform that uses AI to help you discover amazing anime. 
+              Track your watchlist, get personalized recommendations, and explore new worlds.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="gradient-primary text-white border-0 px-8">
                 <Play className="w-4 h-4 mr-2" />
-                Start Discovering
+                Start Exploring
               </Button>
               <Button size="lg" variant="outline">
-                See How It Works
+                Learn More
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
@@ -105,10 +105,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose <span className="gradient-text">Miru</span>?
+              Why <span className="gradient-text">Miru</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Experience the future of anime discovery with our intelligent recommendation system
+              A passion project built by anime fans, for anime fans. Completely free, forever.
             </p>
           </motion.div>
 
@@ -167,16 +167,16 @@ export default function Home() {
             className="max-w-3xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Find Your Next
+              Ready to Explore
               <br />
-              <span className="gradient-text">Anime Obsession</span>?
+              <span className="gradient-text">Amazing Anime</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Join thousands of anime fans who trust Miru to discover their perfect next watch
+              Join the community of anime lovers discovering their next favorite series with Miru
             </p>
             <Button size="lg" className="gradient-primary text-white border-0 px-8">
               <Sparkles className="w-4 h-4 mr-2" />
-              Get Started Free
+              Start Your Journey
             </Button>
           </motion.div>
         </div>
@@ -209,38 +209,38 @@ export default function Home() {
 const features = [
   {
     icon: Brain,
-    title: "AI-Powered Recommendations",
-    description: "Our advanced AI analyzes your preferences to suggest anime that perfectly match your taste and mood."
+    title: "AI-Powered Discovery",
+    description: "Free AI recommendations that learn your taste over time, helping you find hidden gems and perfect matches."
   },
   {
     icon: BookOpen,
-    title: "Smart Watchlist Management",
-    description: "Keep track of what you're watching, completed, and planning to watch with intelligent organization."
+    title: "Personal Watchlist",
+    description: "Track your anime journey with a clean, intuitive watchlist that syncs across all your devices."
   },
   {
     icon: Zap,
-    title: "Lightning Fast Search",
-    description: "Find any anime instantly with our powerful search across multiple databases and platforms."
+    title: "Multiple Sources",
+    description: "Search across AniList, MyAnimeList, and more databases to find any anime, anywhere."
   },
   {
     icon: Heart,
-    title: "Mood-Based Discovery",
-    description: "Tell us how you're feeling, and we'll recommend anime that matches your current mood perfectly."
+    title: "Always Free",
+    description: "No subscriptions, no premium features, no ads. Miru will always be completely free for everyone."
   },
   {
     icon: Users,
-    title: "Community Insights",
-    description: "Discover what people with similar tastes are watching and get recommendations from your anime community."
+    title: "Open Source",
+    description: "Built in the open by the community. Contribute, suggest features, and help make Miru better for everyone."
   },
   {
     icon: TrendingUp,
-    title: "Trending & Seasonal",
-    description: "Stay up-to-date with the latest trending anime and never miss the hottest seasonal releases."
+    title: "Community Driven",
+    description: "Discover what's trending in the anime community and find recommendations from fellow anime lovers."
   }
 ];
 
 const stats = [
-  { value: "50K+", label: "Anime Tracked" },
-  { value: "10K+", label: "Happy Users" },
-  { value: "95%", label: "Match Accuracy" }
+  { value: "Free", label: "Forever" },
+  { value: "Open", label: "Source" },
+  { value: "No Ads", label: "Ever" }
 ];
