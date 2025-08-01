@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeSwitch } from "@/components/theme-switch";
+import { AuroraText } from "@/components/magicui/aurora-text";
 import { 
   Sparkles, 
   Brain, 
@@ -27,24 +28,23 @@ export default function Home() {
       <motion.nav 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="fixed top-0 w-full z-50 backdrop-blur-md bg-background/80 border-b border-border"
+        className="fixed top-4 left-1/2 -translate-x-1/2 z-50 backdrop-blur-xl bg-background/30 border border-white/20 dark:border-white/10 rounded-3xl px-8 py-4 shadow-2xl shadow-purple-500/10 w-fit min-w-[750px]"
       >
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="flex items-center justify-between w-full">
           <motion.div 
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
           >
-            <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-white" />
+            <div className="w-6 h-6 gradient-primary rounded-lg flex items-center justify-center">
+              <Sparkles className="w-4 h-4 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text">Miru</span>
+            <span className="text-lg font-bold gradient-text">Miru</span>
           </motion.div>
           
           <div className="flex items-center gap-4">
-            <Button variant="ghost">Features</Button>
-            <Button variant="ghost">About</Button>
-            <ThemeToggle />
-            <Button className="gradient-primary text-white border-0">
+            <Button variant="ghost" size="sm">Features</Button>
+            <Button variant="ghost" size="sm">About</Button>
+            <Button size="sm" className="gradient-primary text-white border-0">
               Get Started
             </Button>
           </div>
@@ -68,7 +68,12 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Discover Your Next
               <br />
-              <span className="gradient-text">Favorite Anime</span>
+              <AuroraText 
+                colors={["#8B5CF6", "#A855F7", "#7C3AED", "#C084FC", "#E879F9", "#9333EA"]}
+                speed={0.8}
+              >
+                Favorite Anime
+              </AuroraText>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -180,16 +185,20 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 px-4 border-t border-border">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-2 mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-2">
               <div className="w-6 h-6 gradient-primary rounded flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-white" />
               </div>
               <span className="font-bold gradient-text">Miru</span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              © 2025 Miru. Discover anime with AI.
-            </p>
+            
+            <div className="flex items-center gap-6">
+              <ThemeSwitch />
+              <p className="text-sm text-muted-foreground">
+                © 2025 Miru. Discover anime with AI.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
