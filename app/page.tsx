@@ -20,6 +20,7 @@ import {
   Search
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,8 +36,14 @@ export default function Home() {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
           >
-            <div className="w-6 h-6 gradient-primary rounded-lg flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-white" />
+            <div className="w-8 h-8 flex items-center justify-center">
+              <Image 
+                src="/miru-logo.png" 
+                alt="Miru Logo" 
+                width={32} 
+                height={32} 
+                className="miru-logo"
+              />
             </div>
             <span className="text-lg font-bold gradient-text">Miru</span>
           </motion.div>
@@ -187,8 +194,14 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 gradient-primary rounded flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-white" />
+              <div className="w-8 h-8 flex items-center justify-center">
+                <Image 
+                  src="/miru-logo.png" 
+                  alt="Miru Logo" 
+                  width={32} 
+                  height={32} 
+                  className="miru-logo"
+                />
               </div>
               <span className="font-bold gradient-text">Miru</span>
             </div>

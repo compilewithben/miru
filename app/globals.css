@@ -192,4 +192,12 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  
+  .miru-logo {
+    transition: filter 0.2s ease-in-out;
+  }
+  
+  .dark .miru-logo {
+    filter: invert(1) brightness(1);
+  }
 }
